@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> okome </title>
+    <title> Okome </title>
+
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,184 +21,707 @@
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 
-<body> <!-- -->
-    <!-- Criar Botao Mobile 
-    <i> </i> i = Icone  -->  
+<body> 
+    
+    <!-- Criar Botao Menu Mobile -->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"> </i> <!-- <i> ícone -->
+
+
     <header id="header">
         <div class="d-flex flex-column">
             <div class="profile"> <!-- div = Caixa -->
-                <img src="imju/logo-1.jpg"   class="img-fluid rounded-circle">
-                <h1 class="text-light"> <a href="index.html"> Okome </a>
+                <img src="imju/logo-1.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"> 
+                    <a href="index.html"> Okome </a>
                 </h1>
-
-                <div class="social-links mt-3 text-center">
-                    <a href="#"> <i class="bx bxl-instagram"></i> </a>
-                    <a href="#"> <i class="bx bxl-twitter" ></i> </a>
-                    <a href="#"> <i class="bx bxl-youtube" ></i> </a>
-                    <a href="#"> <i class="bx bxl-facebook"></i> </a>
-                    
-                    
-                </div> <!-- FIM social-links -->      
-             </div> <!-- FIM div Profile -->
                 
-                <nav id="navbar" class="nav-menu navbar"> 
+                <div class="social-links mt-3 text-center">
+                    <a href="https://www.instagram.com/gustavo.feriani/" target="_blank"> 
+                         <i class='bx bxl-instagram'></i> </a>
+
+                    <a href="https://www.facebook.com/guhferiani" target="_blank">
+                        <i class='bx bxl-facebook-circle'></i> </a>
+
+                    <a href="https://www.x.com/guh-feriani" target="_blank"> 
+                        <i class='bx bxl-twitter'></i> </a>
+
+                    <a href="https://www.linkedin.com/in/gustavo-feriani" target="_blank">
+                         <i class='bx bxl-linkedin'></i> </a>
+
+                    <a href="#"> <i class='bx bxl-twitch'></i> </a>
+                </div> <!-- FIM social-links -->
+            </div> <!-- FIM div Profile -->
+
+            <!-- Menu Lateral em Lista -->
+            <nav id="navbar" class="nav-menu navbar">
                 <ul>
                     <li>
-                        <a href="#hero" class="nav-link scrollto active">
-                                <i class="bx bx-home"> </i>
-                                <span>Home</span>
+                        <a href="#hero" class="nav-link scrollto active"> 
+                            <i class="bx bx-home"> </i>
+                            <span>Home</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href="#about" class="nav-link scrollto active">
-                                <i class="bx bx-user"> </i>
-                                <span>Sobre</span>
+                        <a href="#about" class="nav-link scrollto"> 
+                            <i class="bx bx-user"> </i>
+                            <span>Sobre</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href="#resume" class="nav-link scrollto active">
-                                <i class="bx bx-file-blank"> </i>
-                                <span>Resume</span>
+                        <a href="#skills" class="nav-link scrollto"> 
+                            <i class='bx bxs-bar-chart-alt-2'></i>
+                            <span>Habilidades</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href="#portfolio" class="nav-link scrollto active">
+                        <a href="#resume" class="nav-link scrollto"> 
+                            <i class="bx bx-file-blank"> </i>
+                            <span>Resumo</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="nav-link scrollto"> 
                             <i class="bx bx-book-content"> </i>
                             <span>Portfolio</span>
                         </a>
                     </li>
-                    <li>    
-                        <a href="#services" class="nav-link scrollto active">
+
+                    <li>
+                        <a href="#services" class="nav-link scrollto"> 
                             <i class="bx bx-server"> </i>
                             <span>Serviços</span>
                         </a>
                     </li>
-                    <li>    
-                        <a href="#contact" class="nav-link scrollto active">
+
+                    <li>
+                        <a href="#contact" class="nav-link scrollto"> 
                             <i class="bx bx-envelope"> </i>
                             <span>Contato</span>
-                        
                         </a>
                     </li>
-                    <li>
-
-
                     
-                </ul> 
+                </ul>
+            </nav> <!-- Fim NAV = MENU -->
 
-                <nav> <!-- FIM NAV = MENU -->
 
-            
 
-         </div> <!--x flex-column -->
-    </header>  <!-- FIM da HEADER -->
+        </div> <!-- d-flex flex-column -->
+    </header> <!-- Fim da HEADER -->
 
     <!-- Seção HERO -->
-    <section id="hero" class="d-flex flex volum justify-content-center align-items-center"> 
-         <div class="hero-container"data-aos="fade-in"> 
-             <h1> okome </h1> <!-- H1 = Titulo -->
-             <p> Restaurante japones <span class="typed" data-typed-items="Sushi, Sashimi, Tempura, Teriyaki, Ramen, Udon, Wagyu, Miso"> </span> </p> 
-
-         </div> <!-- FIM DIV HERO Container -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1> Okome </h1> <!-- H1 = Titulo -->
+            <p> Nos temos <span class="typed" 
+                data-typed-items="Sushi,Temaki,Sashimi,Hot roll"> </span>
+            </p>
+        </div> <!-- FIM DIV HERO Container -->
     </section>  <!-- FIM Seção HERO -->
-        <main id="main">
 
-          <!-- Sobre-->
-          <section id="about" class="about">
-            <div classe="container">
-                <div class="section-title">
-                    <h2>Sobre</h2>
-                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, eligendi molestias voluptas omnis quibusdam praesentium repellat rerum, necessitatibus aut aliquam rem quae quasi aperiam magni provident, impedit commodi vel architecto.</h2>
+
+    <main id="main"> 
+
+    <!-- SOBRE -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Sobre</h2>
+                <p>  No Okome, celebramos a tradição japonesa, proporcionando aos nossos clientes uma jornada culinária excepcional. </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4" data-aos="fade-right">
+                    <img src="imju/logo-1.jpg" alt="Logo" class="img-fluid" >
                 </div>
 
-                <div classe="row">
-                    <div class="col-lg-6">
-                        <ul>
-                            <li><i class="bi bi-chevron-right"></i>
-                            <strong>Birthiday</strong> <span> 1 May 1995</span></li>
-
-                            <li><i class="bi bi-chevron-right"></i>
-                            <strong>Website</strong> <span> www.example.com</span></li>
-
-                        </ul>
-                        <img src="imju/logo 2.jpg" alt="100"
-                        class= "img-fluid" width="60px" height="60px">
+                <div class="col-lg-8 pt-4 pt-lg-0 content"
+                    data-aos="fade-left">
                     
-                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae inventore quisquam maxime in quos quasi ad dolor ipsa exercitationem distinctio quibusdam, possimus voluptatibus odio fugiat delectus, itaque veniam, aliquam velit.</h3>
-                        <p class="fst-italic"></p>
-                        <b>Missão</b>
-                        
+                    <h3>Okome</h3>
+                    <p class="fst-italic">
+                    <b> Missão:</b> Nossa missão é proporcionar uma experiência gastronômica autêntica e memorável, celebrando a rica tradição culinária japonesa sempre oferecendo pratos frescos e deliciosos, em um ambiente acolhedor e sofisticado, onde os clientes se sintam bem-vindos. <br>
+                    <b>Visão:</b> Nosso objetivo é ser reconhecido como o destino preferido para os amantes da culinária japonesa, tanto pela qualidade excepcional de nossos pratos quanto pela experiência gastronômica única que proporcionamos
+                    e.<br>
+                    <b>Valores:</b> Excelência: Comprometemo-nos com a excelência em tudo o que fazemos, desde a seleção dos ingredientes até o serviço ao cliente, buscando sempre aperfeiçoar nossas habilidades e processos.
+
+                    Autenticidade: Valorizamos a autenticidade da culinária japonesa e nos esforçamos para preservar suas tradições, técnicas e sabores distintivos em cada prato que servimos.
+                    
+                    Hospitalidade: Acreditamos em proporcionar uma experiência acolhedora e hospitaleira a cada cliente que visita o nosso restaurante, cultivando relações genuínas e criando memórias positivas.
+                    </p>
+
                 
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li> <i class="bi bi-chevron-rigth"></i>
-                                    <b> Fundação </b> 06/07/2024
-                                    </li>
-                                </ul>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-chevron-right"> </i>
+                                    <b>Fundação:</b> 06/07/2024
+                                </li>
 
-                            </div> <!-- COL 6.1-->
+                                <li>
+                                    <i class="bi bi-chevron-right"> </i>
+                                    <b>Ramo:</b> culinária
+                                </li>
 
-                            <div class="col-lg-6"> >
+                                <li>
+                                    <i class="bi bi-chevron-right"> </i>
+                                    <b>Telefone:</b> (11) 9000-000
+                                </li>
 
-                            </div> <!-- COL 6.2-->
-                        </div> <!-- ROW -->
+                                <li>
+                                    <i class="bi bi-chevron-right"> </i>
+                                    <b>Cidade:</b>  São paulo
+                                </li>
+                            </ul>
+                        </div> <!-- COL 6.1 -->
+
+                    </div>  <!-- ROW -->
+                </div> <!-- content -->
+
+            </div> <!-- FIm ROW -->
+        </div>  <!-- FIm Container -->
+    </section> <!-- FIm SOBRE -->
+
+    <!-- Seção Feitos -->
+    <section id="facts" class="facts">
+        <div class="container">
+            
+            <div class="section-title">
+                <h2>Feitos</h2>
+                <p> Fidelidade dos Clientes, A lealdade e o apoio contínuo de nossos clientes são testemunhos do nosso compromisso com a qualidade, serviço excepcional e experiências gastronômicas memoráveis que oferecemos </p>
+            </div>
+
+    <div class="row no-gutters">             
+
+        <div class="col-lg-3 col-md-6 d-md-flex aling-items-md-stretch" data-aos="fade-up">
+
+            <div class="count-box">
+                <i class="bi bi-emoji-smile"> </i>
+                <span data-purecounter-start="0"
+                data-purecounter-end="175"
+                data-purecounter-duration="1"
+                class="purecounter">  </span>
                 
-            </div> <!-- FIM ROW-->
+                <p> <strong>Clientes Satisfeitos:</strong></p>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex aling-items-md-stretch" data-aos="fade-up">
+
+            <div class="count-box">
+                <i class="bi bi-kanban"></i>
+                <span data-purecounter-start="0"
+                data-purecounter-end="175"
+                data-purecounter-duration="1"
+                class="purecounter">  </span>
+                
+                <p> <strong>Projetos</strong></p>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex aling-items-md-stretch" data-aos="fade-up">
+
+            <div class="count-box">
+                <i class="bi bi-clock-history"></i>
+                <span data-purecounter-start="0"
+                data-purecounter-end="2607"
+                data-purecounter-duration="1"
+                class="purecounter">  </span>
+                
+                <p> <strong>Horas de trabalho</strong> </p>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex aling-items-md-stretch" data-aos="fade-up">
+
+            <div class="count-box">
+                <i class="bi bi-people-fill"></i>
+                <span data-purecounter-start="0"
+                data-purecounter-end="175"
+                data-purecounter-duration="1"
+                class="purecounter">  </span>
+                
+                <p> <strong>Tarefas em Equipe</strong> </p>
+            </div>
+
+        </div>
+
+    </div> <!-- NO GUTTERS -->
+
+</div> <!-- FIm Container -->
+</section> <!-- FIM Feitos -->
+
+<!-- Seçao Habilidade -->
+<section id="skills" class="skills section-bg">
+<div class="container">
+
+    <div class="section-title">
+        <h2> Habilidades </h2>
+        <p>Expertise Culinária Japonesa: Possuímos uma equipe de chefs altamente qualificados e especializados na autêntica culinária japonesa, capazes de criar pratos excepcionais que capturam a essência dos sabores tradicionais.
+ </p><p>Serviço ao Cliente Excepcional: Nossa equipe é treinada para oferecer um serviço ao cliente excepcional, garantindo que cada visita ao nosso restaurante seja uma experiência agradável e memorável. Valorizamos a cortesia, a eficiência e a atenção aos detalhes. </p>
+    </div>
+
+    <article class="row skills-content">
+        
+        <div class="col-lg-6" data-aos="fade-up">
+            
+            <div class="progress">
+                <span class="skill"> HTML <i class="val"> 100% </i> </span>
+
+                <div class="progress-bar-wrap">
+
+                    <div class="progress-bar" role="progressbar" 
+                    aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100">
+                    </div>
+
+                </div>
+            </div>
 
 
-            <!-- FIM Container -->
-          </section>
-        <!-- Fim Sobre-->
 
 
-    </main>
+        </div>
+        
+<!-- ****************************************************************    -->
+
+        <div class="col-lg-6" data-aos="fade-up">
+            
+            
+
+        </div>
+
+
+    </article> <!--  skills-content -->
+
+</div> <!-- FIm Container -->
+</section> 
+<!-- FIM Habilidade -->
+
+<section id="resume" class="resume">
+<div class="container">
+
+    <div class="section-title">
+        <h2> Resumo </h2>
+        <p> Okome é um destino imperdível para os amantes da culinária japonesa. Combinando tradição e inovação, oferecemos uma experiência gastronômica autêntica e memorável, onde os sabores do Japão ganham vida em cada prato </p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6" data-aos="fade-up">
+        <h3 class="resume-title"> Inicio da Jornada </h3>
+
+            <div class="resume-item pb-0">
+                <h4> Meu Sonho </h4>
+                <p>
+                    <em> Lorem ipsum dolor </em>
+                    <!-- TAG "<em>" para texto em Italico  --> 
+                </p>
+            <ul>
+                <li>Em 2020 criei a empresa...</li>
+                <li> </li>
+                <li> </li>
+            </ul>
+            </div>
+
+            <h3 class="resume-title"> Marcos importantes </h3>
+
+            <div class="resume-item">
+                <h4> 2021 </h4>
+                <h5> Compra do Terreno </h5>
+                <p> Lorem ipsum dolor sit amet consectetur. </p>
+                <p> <em>Lorem teste 2022 </em> </p>
+            </div>
+            <div class="resume-item">
+                <h4> Março / 2024 </h4>
+                <p> Lorem ipsum, </p>
+                <ul>
+                    <li> Aula 01 </li>
+                    <li> Aula 02 </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="col-lg-6" data-aos="fade-up" 
+        data-aos-delay="100">
+
+    <h3 class="resume-title"> Referências </h3>
+        <div class="resume-item">
+            <h4> Nome Marca </h4>
+            <h5> Bebidas </h5>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <ul>
+                <li> Topico 1 </li>
+                <li> Topico 2 </li>
+            </ul>
+
+        </div>
+
+        </div>   
+
+    </div> <!--FIM ROW -->
+ 
+</div>
+</section> <!-- FIM Resumo --> 
+
+<section id="portfolio" class="portfolio section-bg">
+<div class="container">
+
+    <div class="section-title">
+        <h2> Portfolio </h2>
+        <p> Conheça os meus Serviços</p>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-filters">
+<li data-filter="*" class="filter-active"> Todos </li>
+
+<li data-filter=".filter-app">
+    Sashimi </li>
+
+<li data-filter=".filter-bd"> 
+    Canape</li>
+                
+<li data-filter=".filter-web">
+     Hot holl </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="row portfolio-container" 
+    data-aos="fade-up" data-aos-delay="100">
+
+        <!-- FOTO 1 -->
+    
+        
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+                <img src="pratos/sashimi de salmão.JPG" class="img-fluid">
+
+                <div class="portfolio-links">
+                    
+                    <a href="img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <i class="bx bx-plus"> </i>
+                    </a>
+                    
+                    <a href="detalhes.html" target="_blank">
+                        <i class="bx bx-link"></i>
+                    </a> 
+
+                </div>
+            </div>
+        </div> <!-- FOTO 1 -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+                <img src="pratos/hot roll de salmão.JPG" class="img-fluid">
+
+                <div class="portfolio-links">
+                    
+                    <a href="img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <i class="bx bx-plus"> </i>
+                    </a>
+                    
+                    <a href="detalhes.html" target="_blank">
+                        <i class="bx bx-link"></i>
+                    </a> 
+
+                </div>
+            </div>
+        </div> <!-- FOTO 2 -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-bd">
+            <div class="portfolio-wrap">
+                <img src="pratos/canape de salmão.JPG" class="img-fluid">
+
+                <div class="portfolio-links">
+                    
+                    <a href="img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <i class="bx bx-plus"> </i>
+                    </a>
+                    
+                    <a href="detalhes.html" target="_blank">
+                        <i class="bx bx-link"></i>
+                    </a> 
+
+                </div>
+            </div>
+        </div> <!-- FOTO 3 -->
+
+
+   </div> <!-- portfolio Container -->
+</div> <!-- portfolio Container -->
+
+</div> <!-- Container -->
+</section>
+
+
+<section id="services" class="services">
+<div class="container">
+
+    <div class="section-title">
+        <h2> Serviços </h2>
+        <p> Nos oferecemos diversos serviços como
+        </p>
+    </div>
+
+    <div class="row">
+
+<div class="col-lg-4 col-md-6 icon-box" 
+data-aos="fade-up">
+
+<div class="icon">
+    <i class='bx bx-package' ></i>
+</div>
+<h4 class="title"> 
+    <a href="#"> Delivery </a>  
+</h4>
+<p class="descripton"> Permitindo que os clientes desfrutem da comida japonesa em casa ou em outro local conveniente
+</p>
+</div>
+
+<div class="col-lg-4 col-md-6 icon-box" 
+data-aos="fade-up">
+
+<div class="icon">
+    <i class='bx bx-notepad'></i>
+</div>
+<h4 class="title"> 
+    <a href="#"> Reservas </a>  
+</h4>
+<p class="descripton"> Permitindo que os clientes façam reservas com antecedência e desfrutem de um serviço de mesa atencioso durante a sua refeição.
+</p>
+</div>
+
+<div class="col-lg-4 col-md-6 icon-box" 
+data-aos="fade-up">
+
+<div class="icon">
+    <i class='bx bx-sushi' ></i>
+</div>
+<h4 class="title"> 
+    <a href="#"> Eventos especiais </a>  
+</h4>
+<p class="descripton"> Oferecendo serviços para eventos privados, festas e catering, com opções personalizadas para atender às necessidades dos clientes.
+</p>
+</div>
+</div>
+</div>
+</section> 
+
+<section id="testimonials" class="testimonials section-bg">
+<div class="container">
+
+    <div class="section-title">
+        <h2> Depoimentos </h2>
+        <p> Feedback dos meus clientes. </p>
+    </div>
+
+    <div class="testimonials-slider swiper" 
+    data-aos="fade-up" data-aos-delay="100">
+
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<article class="testimonial-item" data-aos="fade-up">
+<p>
+<i class="bx bxs-quote-alt-left  quote-icon-left"> </i>
+Maravilhoso! Equipe atenciosa e comida deliciosa
+<i class="bx bxs-quote-alt-right quote-icon-right"></i>    
+</p>
+<img src="img/depoimentos/testimonials-1.jpg" alt=""             class="testimonial-img">
+<h3> Saul Goodman </h3>
+<h4> Cliente </h4>
+</article>
+</div>
+
+        <div class="swiper-slide">
+
+            <article class="testimonial-item" data-aos="fade-up">
+                <p>
+                    <i class="bx bxs-quote-alt-left      quote-icon-left"> </i>
+                    Fiquei encantado! 5 estrelas em tudo
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>    
+                </p>
+                    <img src="img/depoimentos/testimonials-1.jpg" alt="" class="testimonial-img">
+                    <h3> Saul Goodman </h3>
+                    <h4> Cliente </h4>
+            </article>
+        </div>
+
+        <div class="swiper-slide">
+
+            <article class="testimonial-item" data-aos="fade-up">
+                <p>
+                    <i class="bx bxs-quote-alt-left      quote-icon-left"> </i>
+                    Adorei! Voltarei com certeza
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>    
+                </p>
+                    <img src="img/depoimentos/testimonials-1.jpg" alt="" class="testimonial-img">
+                    <h3> Saul Goodman </h3>
+                    <h4> Cliente </h4>
+            </article>
+        </div>
+
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    </div>
+</div>
+</section> 
 
 
 
+<section id="contact" class="contact">
+<div class="container">
+
+    <div class="section-title">
+        <h2> Contato </h2>
+        <p> Entre em Contato, fale com um especialista da nossa Equipe </p>
+    </div>
+
+    <div class="row" data-aos="fade-in">
+
+        <div class="col-lg-5 d-flex align-items-stretch">
+
+            <article class="info">
 
 
+                <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Endereço: </h4>
+                    <p> R: Jaguaré Mirim, 71 - Vila Leopoldina. 
+                    <br> CEP: 05311-020 </p>
+                </div>
+
+                <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4>E-mail: </h4>
+                    <p> teste@teste.com </p>
+                </div>
+
+                <div class="phone">
+                    <i class="bi bi-whatsapp"></i>
+                    <h4>Whats: </h4>
+                    <p> (11) 9 8765 - 4321 </p>
+                </div>
+          
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58530.56459637248!2d-46.80800967832034!3d-23.52673669999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b811e8e3a1%3A0xa7564bb4c78f41b3!2sSenai%20Vila%20Leopoldina%20-%20Mariano%20Ferraz!5e0!3m2!1spt-BR!2sbr!4v1710250852489!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </article>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+<form action="#" class="php-email-form">
+
+    <div class="row">
+
+        <article class="form-group col-md-6">
+
+<label for="name"> Nome: *</label>
+
+<input type="text" placeholder="Nome Completo" required
+class="form-control">
+
+        </article>
+
+        <article class="form-group col-md-6">
+            <label for="email"> E-mail </label>
+
+            <input type="email" class="form-control" required>
+
+        </article>
+
+        <article class="form-group col-md-6">
+            <label for="phone"> Telefone </label>
+
+            <input type="tel" class="form-control" required>
+
+        </article>
+    </div> <!-- FIM ROW --> 
+
+    <article class="form-group">
+
+        <label for="subject"> Assunto </label>
+
+        <input type="text" class="form-control" required>
+
+    </article>
+
+    <article class="form-group">
+        <label for="message"> Digite sua Mensagem: </label>
+        
+        <textarea class="form-control" 
+        cols="30" rows="10">  </textarea>
+    </article>
+
+    <div class="text-center"> 
+        <button type="submit"> Enviar </button>
+    </div>
+</form>
+
+        </div>
 
 
+    </div> <!-- FIM ROW -->
+
+</div>
+</section>
+
+</main>
+
+<!-- RODA PE-->
+<footer class="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy;Todos os Direitos Reservados
+            <strong><span> Okome </span></strong>
+        </div>
+    <div class=credits>
+    Desenvolvido por
+    <a href="MEU LINK" target="blank">
+        Thiago
+    </a>
+        
+</footer>
 
 
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"> 
+<i class="bi bi-arrow-up-short"> </i>
+</a>
 
+<!-- Validadores JS -->
+<script src="validador/purecounter/purecounter_vanilla.js"></script>
+<script src="validador/aos/aos.js"></script>
+<script src="validador/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="validador/glightbox/js/glightbox.min.js"></script>
+<script src="validador/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="validador/swiper/swiper-bundle.min.js"></script>
+<script src="validador/typed.js/typed.umd.js"></script>
+<script src="validador/waypoints/noframework.waypoints.js"></script>
+<script src="validador/php-email-form/validate.js"></script>
 
-
-
-
-
-
-
-
-
-
-          <!-- Validadores JS -->
-          <script src="validador/purecounter_vanilla.js"></script>
-
-          <script src="validador/aos/aos.js"></script>
-
-          <script src="validador/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-          <script src="validador/glightbox/js/glightbox.min.js"></script>
-
-          <script src="validador/isotope-layout/isotope.pkgd.min.js"></script>
-
-          <script src="validador/swiper/swiper-bundle.min.js"></script>
-
-          <script src="validador/typed.js/typed.umd.js"></script>
-
-          <script src="validador/waypoints/noframework.waypoints.js"></script>
-
-          <script src="validador/php-email-form/validate.js"></script>
-         <!-- Script JavaScript -->
-         <script src="js/main.js"> </script>
-
+<!-- Script JavaScript -->
+<script src="js/main.js"></script>
 
 
 </body>
