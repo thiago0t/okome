@@ -167,9 +167,9 @@
         itemSelector: '.portfolio-item'
       });
 
-      let portfolioFilters = select('#portifolio-filters li', true);
+      let portfolioFilters = select('#portfolio-filters li', true);
 
-      on('click', '#portifolio-filters li', function(e) {
+      on('click', '#portfolio-filters li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
